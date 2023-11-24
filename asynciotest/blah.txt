@@ -1,0 +1,52 @@
+import asyncio
+import aiohttp
+
+# async def main():
+#     print("Main is started")
+#     # await foo()
+#     task = asyncio.create_task(foo("blah"))
+#     await asyncio.sleep(6)
+#     print("Main is finished")
+
+
+# async def foo(txt):
+#     print(f"Foo is started, Processing {txt}")
+#     await asyncio.sleep(5)
+#     with open(f"{txt}.txt", "w") as fp:
+#         fp.write(f"{txt}\n" * 10)
+#     print("Foo is finished")
+
+
+# asyncio.run(main())
+# while True:
+#     pass
+
+
+# async def fetch_data(url):
+#     async with aiohttp.ClientSession() as session:
+#         async with session.get(url) as response:
+#             print("Status:", response.status)
+#             print("Content-type:", response.headers["content-type"])
+
+#             html = await response.text()
+#             print("Body:", html[:25], "...")
+
+
+# async def main():
+#     url = "http://python.org"
+#     task = asyncio.create_task(fetch_data(url))
+#     await task
+
+
+# asyncio.run(main())
+
+
+# conv_task = await self.convert_pdf()
+        # s3_task = await self.upload_s3()
+        # ext_task = await self.extract_ents()
+        # conv_task = await self.convert_pdf()
+        # asyncio.gather() #?
+        # loop = asyncio.get_event_loop()
+        # loop.run_until_complete(conv_task())
+        # loop.close()
+        # await conv_task()
