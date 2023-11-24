@@ -16,7 +16,7 @@ libreoffice_command = [
     "/dev/stdout",  #'/dev/stdout',  # Write to stdout ( use /dev/stdout for linux & CON for windows)
 ]
 try:
-    with open("sample.pdf", "r", encoding="utf8") as fp:
+    with open("sample.pdf", "r", encoding="utf16") as fp:
         file_body = fp.read()
 
     input_stream = io.BytesIO(file_body)
